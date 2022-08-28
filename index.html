@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Days Until</title>
+</head>
+<body>
+    <div class="hero-image">
+        
+    </div>
+    <div class="until" id="myCountdown">
+        <!-- days -->
+        <div class="until__component">
+            <div class="until__numeric until__numeric--days">00</div>
+            <div class="until__unit">Days</div>
+        </div>
+        <!-- hours -->
+        <div class="until__component">
+            <div class="until__numeric until__numeric--hours">00</div>
+            <div class="until__unit">Hours</div>
+        </div>
+        <!-- min -->
+        <div class="until__component">
+            <div class="until__numeric until__numeric--minutes">00</div>
+            <div class="until__unit">Minutes</div>
+        </div>
+        <!-- sec -->
+        <div class="until__component">
+            <div class="until__numeric until__numeric--seconds">00</div>
+            <div class="until__unit">Second</div>
+        </div>
+        <div class="until__event">Until 31 December 2022</div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.5/dayjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.5/plugin/duration.min.js"></script>   
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.hero-image{
+    /* The image used */
+  background-image: url("https://cdn.britannica.com/03/75503-050-F65891FA/volcanic-cone-Japan-Mount-Fuji.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* blur */
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+.until{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1em;
+    padding: 1em;
+    background: #009578;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    font-family: sans-serif;
+}
+
+.until__component{
+    text-align: center;
+    background: #fff;
+    border-radius: 5px; 
+}
+
+.until__numeric{
+    color: #333;
+    padding: 0.5em 0;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.until__unit{
+    font-size: 1.2em;
+    padding-bottom: 1em;
+    font-weight: bold;
+    color: #940018;
+}
+
+.until__event{
+    grid-column: span 4;
+    text-align: center;
+    color: white;
+
+}
